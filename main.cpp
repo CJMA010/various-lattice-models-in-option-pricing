@@ -14,7 +14,7 @@ using namespace std;
 
 int main(int argc, const char *argv[])
 {
-    // 1 (a)
+    // Comparing different parametrization methods
     ofstream write_a;
     write_a.open ("results_a.csv");
     for (int i=25;i<=N_max;i++){
@@ -37,7 +37,7 @@ int main(int argc, const char *argv[])
     cout << "done for 1.a!" << endl;
 
 
-    // 1 (b)
+    // binomial Black-Scholes and Richardson extrapolation
     ofstream write_b;
     write_b.open("results_b.csv");
     for (int i = 25; i <= N_max; i++) {
@@ -61,7 +61,7 @@ int main(int argc, const char *argv[])
     write_b.close();
     cout << "done for 1.b!" << endl;
 
-    // 1 (c)
+    // Trinomial model
     ofstream write_c;
     write_c.open("results_c.csv");
     for (int i = 25; i <= N_max; i++) {
@@ -76,7 +76,7 @@ int main(int argc, const char *argv[])
     write_c.close();
     cout << "done for 1.c!" << endl;
     
-// Question 2
+// Binomial pyramid for pricing basket option
     
     K = 100;
     int step = 60;
